@@ -77,17 +77,13 @@ public class ConsoleTailProjectAction<P extends AbstractProject<P, R>, R extends
 
     public boolean isComplete() throws IOException {
         R build = getBuild();
-        return build == null || build.getLog(16).size() < 16;
+        return build == null || build.getLogText().length() < 4096L;
     }
 
     public void writeLogTo(XMLOutput out) throws IOException {
         R build = getBuild();
         if (build != null) {
-            long offset = 0L;
-            for (String s : build.getLog(15)) {
-                offset += s.length() + 2;
-            }
-            build.getLogText().writeHtmlTo(Math.max(0L, build.getLogText().length() - offset), out.asWriter());
+            build.getLogText().writeHtmlTo(Math.max(0L, build.getLogText().length() - 4096L), out.asWriter());
         }
     }
 }

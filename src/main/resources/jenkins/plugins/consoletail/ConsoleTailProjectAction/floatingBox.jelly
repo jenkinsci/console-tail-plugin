@@ -32,7 +32,7 @@
       <j:if test="${!action.complete}">
         <br /><i>${%Snip!} (<a href="lastFailedBuild/consoleFull">${%Full log}</a>)</i>
       </j:if>
-      <pre>
+      <pre style="max-width: 600px">
         <st:getOutput var="output" />
         <j:whitespace>${action.writeLogTo(output)}</j:whitespace>
       </pre>
