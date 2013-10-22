@@ -33,7 +33,7 @@
   </parent>
 
   <artifactId>console-tail</artifactId>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>Console Tail Plugin</name>
@@ -64,7 +64,7 @@
     <connection>scm:git:git://github.com/jenkinsci/console-tail-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/console-tail-plugin.git</developerConnection>
     <url>http://github.com/jenkinsci/console-tail-plugin</url>
-    <tag>console-tail-1.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
