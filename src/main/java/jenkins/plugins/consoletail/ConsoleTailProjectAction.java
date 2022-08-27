@@ -25,6 +25,7 @@
 package jenkins.plugins.consoletail;
 
 import edu.umd.cs.findbugs.annotations.CheckForNull;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.model.AbstractBuild;
 import hudson.model.AbstractProject;
 import hudson.model.Action;
@@ -32,6 +33,7 @@ import hudson.model.Result;
 import org.apache.commons.jelly.XMLOutput;
 
 import java.io.IOException;
+import java.util.Objects;
 
 /**
  * @author Stephen Connolly
@@ -61,6 +63,7 @@ public class ConsoleTailProjectAction<P extends AbstractProject<P, R>, R extends
     }
 
     @CheckForNull
+    @SuppressFBWarnings(value = "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE", justification = "Requires triage")
     public R getBuild() {
         if (project == null) {
             return null;
@@ -80,6 +83,7 @@ public class ConsoleTailProjectAction<P extends AbstractProject<P, R>, R extends
         return build == null || build.getLogText().length() < 4096L;
     }
 
+    @SuppressFBWarnings(value = "RV_RETURN_VALUE_IGNORED", justification = "Requires triage")
     public void writeLogTo(XMLOutput out) throws IOException {
         R build = getBuild();
         if (build != null) {
