@@ -34,11 +34,12 @@
   </parent>
 
   <artifactId>console-tail</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <version>${changelist}</version>
   <packaging>hpi</packaging>
 
   <name>Console Tail Plugin</name>
   <url>https://github.com/jenkinsci/console-tail-plugin</url>
+
   <licenses>
     <license>
       <name>The MIT license</name>
@@ -49,8 +50,9 @@
 
   <developers>
     <developer>
-      <id>stephenconnolly</id>
-      <name>Stephen Connolly</name>
+      <id>NotMyFault</id>
+      <name>Alexander Brandes</name>
+      <email>contact@notmyfault.dev</email>
     </developer>
   </developers>
 
@@ -58,10 +60,11 @@
     <connection>scm:git:https://github.com/jenkinsci/console-tail-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/console-tail-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/console-tail-plugin</url>
-    <tag>HEAD</tag>
+    <tag>${scmTag}</tag>
   </scm>
 
   <properties>
+    <changelist>999999-SNAPSHOT</changelist>
     <jenkins.version>2.346.1</jenkins.version>
   </properties>
 
