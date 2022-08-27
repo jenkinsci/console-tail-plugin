@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    This plugin provides a tail view of the console on the main job page when the last build failed.
+</div>
