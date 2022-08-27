@@ -23,19 +23,16 @@
  -->
 
 <?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt" xmlns:local="local">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler">
   <j:if test="${action.visible}">
-    <div style="background-color: #eee; overflow-x: auto; padding:10px; margin: 2px; border: 1px solid #777;">
-      <b><a href="lastFailedBuild/console"><img src="${imagesURL}/24x24/terminal.png" width="24" height="24"/></a>
         <st:nbsp/>
-        <a href="lastFailedBuild/console">${%Console output}</a></b>
+        <a href="lastFailedBuild/console">${%Console output}</a>
       <j:if test="${!action.complete}">
         <br /><i>${%Snip!} (<a href="lastFailedBuild/consoleFull">${%Full log}</a>)</i>
       </j:if>
-      <pre style="max-width: 600px">
+      <pre style="max-width: auto">
         <st:getOutput var="output" />
         <j:whitespace>${action.writeLogTo(output)}</j:whitespace>
       </pre>
-    </div>
   </j:if>
 </j:jelly>

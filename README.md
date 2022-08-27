@@ -1,32 +1,11 @@
 # Console Tail Plugin
+==============================
+[![Build Status](https://ci.jenkins.io/buildStatus/icon?job=Plugins/console-tail-plugin/master)](https://ci.jenkins.io/job/plugins/job/console-tail-plugin/)
+[![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/console-tail.svg)](https://plugins.jenkins.io/console-tail/)
+[![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/console-tail.svg?color=blue)](https://plugins.jenkins.io/console-tail/)
+[![Contributors](https://img.shields.io/github/contributors/jenkinsci/console-tail-plugin.svg)](https://github.com/jenkinsci/console-tail-plugin/graphs/contributors)
 
 This plugin adds a floating box to all projects when the last build failed. The floating box is only
 shown if the last build failed.
 
-See also this [plugin's wiki page][wiki]
-
-# Environment
-
-The following build environment is required to build this plugin
-
-* `java-1.6` and `maven-3.0.5`
-
-# Build
-
-To build the plugin locally:
-
-    mvn clean verify
-
-# Release
-
-To release the plugin:
-
-    mvn release:prepare release:perform -B
-
-# Test local instance
-
-To test in a local Jenkins instance
-
-    mvn hpi:run
-
-  [wiki]: http://wiki.jenkins-ci.org/display/JENKINS/Console+Tail+Plugin
+![](images/readme.png)
