@@ -1,4 +1,4 @@
-# Console Tail Plugin
+Console Tail Plugin
 ==============================
 [![Build Status](https://ci.jenkins.io/buildStatus/icon?job=Plugins/console-tail-plugin/master)](https://ci.jenkins.io/job/plugins/job/console-tail-plugin/)
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/console-tail.svg)](https://plugins.jenkins.io/console-tail/)
