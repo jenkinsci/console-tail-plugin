@@ -48,14 +48,6 @@
     </license>
   </licenses>
 
-  <developers>
-    <developer>
-      <id>NotMyFault</id>
-      <name>Alexander Brandes</name>
-      <email>contact(at)notmyfault.dev</email>
-    </developer>
-  </developers>
-
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/console-tail-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/console-tail-plugin.git</developerConnection>
